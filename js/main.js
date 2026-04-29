@@ -198,7 +198,7 @@
       modalName.textContent  = name;
       modalPrice.textContent = price;
       modalDesc.textContent  = desc;
-      modalWaBtn.href = 'https://wa.me/5511999990001?text=' + waMsg;
+      modalWaBtn.href = 'https://wa.me/5528999087714?text=' + waMsg;
 
       modalOverlay.classList.add('open');
       document.body.style.overflow = 'hidden';
