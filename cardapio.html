@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cardápio — Derrete Tudo Smash Burger</title>
+  <meta name="description" content="Conheça o cardápio completo do Derrete Tudo. Smash burgers artesanais, fritas, bebidas e sobremesas em São Paulo." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/waves.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">DT</div>
+        <div>
+          <span class="nav-logo-text">DERRETE TUDO</span>
+          <span class="nav-logo-sub">Smash Burger</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Início</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div class="nav-cta">
+        <a href="contato.html" class="btn-nav-cta">Nossas Unidades</a>
+      </div>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-overlay"></div>
+  <div class="mobile-menu">
+    <div class="mobile-menu-links">
+      <a href="index.html">Início</a>
+      <a href="cardapio.html">Cardápio</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contato</a>
+    </div>
+    <a href="contato.html" class="mobile-menu-cta">Nossas Unidades</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Início</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Cardápio</span>
+      </div>
+      <h1 class="page-hero-title">CARDÁPIO</h1>
+      <p class="page-hero-sub">Escolha o seu favorito e venha se deliciar</p>
+    </div>
+    <div class="page-hero-wave wave-to-white wave-sep--flip">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 90" preserveAspectRatio="none">
+        <path fill="currentColor" d="M0,45 C240,90 480,0 720,45 C960,90 1200,0 1440,45 L1440,90 L0,90 Z"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- CARDÁPIO SECTION -->
+  <section class="cardapio-section">
+    <div class="container">
+
+      <!-- Filter tabs -->
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all">Todos</button>
+        <button class="filter-tab" data-filter="burgers">Burgers</button>
+        <button class="filter-tab" data-filter="smash-duplo">Smash Duplo</button>
+        <button class="filter-tab" data-filter="fritas">Fritas & Sides</button>
+        <button class="filter-tab" data-filter="bebidas">Bebidas</button>
+        <button class="filter-tab" data-filter="sobremesas">Sobremesas</button>
+      </div>
+
+      <!-- BURGERS -->
+      <div class="menu-category" data-category="burgers">
+        <h2 class="menu-category-title">
+          <span class="menu-category-icon"><i class="fa-solid fa-burger"></i></span>
+          Burgers
+        </h2>
+        <div class="products-grid stagger-children">
+
+          <div class="product-card"
+            data-name="Classic Derrete"
+            data-price="R$ 28"
+            data-desc="O clássico que fez o Derrete Tudo famoso. Uma palha de carne bovina fresca esmassada na chapa de ferro fundido, queijo americano derretido na hora, nossa maionese artesanal, picles crocante e cebola caramelizada. Servido no pão brioche assado diariamente."
+            data-img="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img">
+              <span class="product-badge">#1 Mais Pedido</span>
+              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Classic Derrete" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Classic Derrete</h3>
+              <p class="product-card-desc">Smash, queijo americano, maionese da casa, picles, cebola</p>
+              <p class="product-card-price">R$ 28</p>
+            </div>
+          </div>
+
+          <div class="product-card"
+            data-name="Alho Burguer"
+            data-price="R$ 32"
+            data-desc="Para os amantes de alho. Smash na chapa, aioli de alho assado artesanal, queijo gruyère derretido e rúcula fresca. O equilíbrio perfeito entre intensidade e finesse."
+            data-img="https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img"><img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=600&q=80" alt="Alho Burguer" loading="lazy"></div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Alho Burguer</h3>
+              <p class="product-card-desc">Smash, aioli de alho assado, queijo gruyère, rúcula fresca</p>
+              <p class="product-card-price">R$ 32</p>
+            </div>
+          </div>
+
+          <div class="product-card"
+            data-name="Bacon & Smoke"
+            data-price="R$ 34"
+            data-desc="Um tributo à defumação. Smash com bacon artesanal defumado em lascas generosas, queijo cheddar maduro derretido e nosso molho barbecue artesanal feito na casa. Sem rodeios."
+            data-img="https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img"><img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=600&q=80" alt="Bacon & Smoke" loading="lazy"></div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Bacon & Smoke</h3>
+              <p class="product-card-desc">Smash, bacon defumado, queijo cheddar, molho barbecue artesanal</p>
+              <p class="product-card-price">R$ 34</p>
+            </div>
+          </div>
+
+          <div class="product-card"
+            data-name="Chilli Derrete"
+            data-price="R$ 32"
+            data-desc="Para os corajosos. Smash com jalapeño em fatias, molho chipotle defumado, queijo pepper jack e cebola crispy crocante. Pega fogo — mas você vai querer mais."
+            data-img="https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img"><img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=600&q=80" alt="Chilli Derrete" loading="lazy"></div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Chilli Derrete</h3>
+              <p class="product-card-desc">Smash, jalapeño, molho chipotle, queijo pepper jack, cebola crispy</p>
+              <p class="product-card-price">R$ 32</p>
+            </div>
+          </div>
+
+          <div class="product-card"
+            data-name="Trufa Negra"
+            data-price="R$ 38"
+            data-desc="A joia do cardápio. Smash com cogumelos Paris caramelizados, azeite de trufa negra importado e queijo brie derretido. Uma experiência gastronômica em cada mordida."
+            data-img="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img">
+              <span class="product-badge">Premium</span>
+              <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=600&q=80" alt="Trufa Negra" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Trufa Negra</h3>
+              <p class="product-card-desc">Smash, cogumelo caramelizado, azeite de trufa, queijo brie</p>
+              <p class="product-card-price">R$ 38</p>
+            </div>
+          </div>
+
+          <div class="product-card"
+            data-name="Avocado Fresh"
+            data-price="R$ 34"
+            data-desc="Frescor e sabor em equilíbrio. Smash com guacamole artesanal feito na hora, queijo feta desintegrado, tomate seco e alface americana. Leve, mas cheio de personalidade."
+            data-img="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img"><img src="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?auto=format&fit=crop&w=600&q=80" alt="Avocado Fresh" loading="lazy"></div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Avocado Fresh</h3>
+              <p class="product-card-desc">Smash, guacamole artesanal, queijo feta, tomate seco, alface</p>
+              <p class="product-card-price">R$ 34</p>
+            </div>
+          </div>
+
+          <div class="product-card"
+            data-name="Cebola Crispy"
+            data-price="R$ 30"
+            data-desc="Textura máxima. Smash com montanha de cebola crispy crocante, maionese defumada e queijo americano duplo. A cebola é frita na hora — você vai ouvir o crocante."
+            data-img="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80" alt="Cebola Crispy" loading="lazy"></div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Cebola Crispy</h3>
+              <p class="product-card-desc">Smash, cebola crispy, maionese defumada, queijo americano duplo</p>
+              <p class="product-card-price">R$ 30</p>
+            </div>
+          </div>
+
+          <div class="product-card"
+            data-name="Pulled Pork"
+            data-price="R$ 36"
+            data-desc="Porco desfiado por 12 horas no baixo e lento. Smash de carne bovina com pulled pork artesanal, coleslaw cremosa e nosso molho da casa. Dois mundos no mesmo pão."
+            data-img="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img"><img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=600&q=80" alt="Pulled Pork" loading="lazy"></div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Pulled Pork</h3>
+              <p class="product-card-desc">Smash com carne de porco desfiada, coleslaw, molho da casa</p>
+              <p class="product-card-price">R$ 36</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SMASH DUPLO -->
+      <div class="menu-category" data-category="smash-duplo">
+        <h2 class="menu-category-title">
+          <span class="menu-category-icon"><i class="fa-solid fa-fire-flame-curved"></i></span>
+          Smash Duplo
+        </h2>
+        <div class="products-grid stagger-children">
+
+          <div class="product-card"
+            data-name="Double Classic"
+            data-price="R$ 42"
+            data-desc="O dobro de tudo que você ama. Dois smash patties de carne bovina fresca, queijo americano duplo derretido entre as camadas e nosso molho especial. Simples, direto e irresistível."
+            data-img="https://images.unsplash.com/photo-1609167830220-7164aa360951?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img"><img src="https://images.unsplash.com/photo-1609167830220-7164aa360951?auto=format&fit=crop&w=600&q=80" alt="Double Classic" loading="lazy"></div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Double Classic</h3>
+              <p class="product-card-desc">Dois smash patties, queijo americano duplo, molho especial</p>
+              <p class="product-card-price">R$ 42</p>
+            </div>
+          </div>
+
+          <div class="product-card"
+            data-name="Double Cheese"
+            data-price="R$ 44"
+            data-desc="Para quem leva queijo a sério. Dois patties esmassados, cheddar derretido entre cada camada, picles especial crocante e um fio de mostarda amarela. Clássico americano com alma artesanal."
+            data-img="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img"><img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=600&q=80" alt="Double Cheese" loading="lazy"></div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Double Cheese</h3>
+              <p class="product-card-desc">Dois patties, cheddar derretido, picles especial, mostarda</p>
+              <p class="product-card-price">R$ 44</p>
+            </div>
+          </div>
+
+          <div class="product-card"
+            data-name="Derrete Total"
+            data-price="R$ 48"
+            data-desc="O flagship da casa. Duplo smash patty, queijo americano triplo derretido em cascata, bacon em tiras crocantes e o molho secreto que só revelamos no balcão. Sem moderação."
+            data-img="https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img">
+              <span class="product-badge">Chef Recomenda</span>
+              <img src="https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=600&q=80" alt="Derrete Total" loading="lazy">
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Derrete Total</h3>
+              <p class="product-card-desc">Duplo smash, queijo triplo, bacon, molho secreto da casa</p>
+              <p class="product-card-price">R$ 48</p>
+            </div>
+          </div>
+
+          <div class="product-card"
+            data-name="Meat Lovers"
+            data-price="R$ 46"
+            data-desc="Para os carnívoros convictos. Duplo patty de carne bovina mais uma linguiça artesanal esmassada, pimentão vermelho grelhado e cheddar em generosa camada. Proteína máxima."
+            data-img="https://images.unsplash.com/photo-1485963631004-f2f00b1d6606?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img"><img src="https://images.unsplash.com/photo-1485963631004-f2f00b1d6606?auto=format&fit=crop&w=600&q=80" alt="Meat Lovers" loading="lazy"></div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Meat Lovers</h3>
+              <p class="product-card-desc">Duplo patty + linguiça smash, pimentão grelhado, cheddar</p>
+              <p class="product-card-price">R$ 46</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- FRITAS & SIDES -->
+      <div class="menu-category" data-category="fritas">
+        <h2 class="menu-category-title">
+          <span class="menu-category-icon"><i class="fa-solid fa-utensils"></i></span>
+          Fritas &amp; Sides
+        </h2>
+        <div class="products-grid stagger-children">
+
+          <div class="product-card"
+            data-name="Fritas Clássicas"
+            data-price="R$ 16"
+            data-desc="A base de toda boa refeição. Batata palito frita duas vezes para máxima crocância, temperada com sal grosso e uma mistura de ervas frescas. Simples e perfeita."
+            data-img="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img"><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80" alt="Fritas Clássicas" loading="lazy"></div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Fritas Clássicas</h3>
+              <p class="product-card-desc">Batata frita crocante temperada com sal e ervas</p>
+              <p class="product-card-price">R$ 16</p>
+            </div>
+          </div>
+
+          <div class="product-card"
+            data-name="Fritas Cheddar"
+            data-price="R$ 20"
+            data-desc="Fritas crocantes cobertas com molho cheddar cremoso feito na casa e cubos de bacon fritos na hora. O acompanhamento que vira o protagonista."
+            data-img="https://images.unsplash.com/photo-1518013431117-eb1465fa5752?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img"><img src="https://images.unsplash.com/photo-1518013431117-eb1465fa5752?auto=format&fit=crop&w=600&q=80" alt="Fritas Cheddar" loading="lazy"></div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Fritas Cheddar</h3>
+              <p class="product-card-desc">Fritas com molho cheddar e bacon em cubos crocantes</p>
+              <p class="product-card-price">R$ 20</p>
+            </div>
+          </div>
+
+          <div class="product-card"
+            data-name="Fritas Picantes"
+            data-price="R$ 18"
+            data-desc="Para quem quer mais que batata. Fritas temperadas na hora com pimenta caiena, alho em pó e páprica defumada. Acompanha molho ranch artesanal para equilibrar."
+            data-img="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img"><img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=600&q=80" alt="Fritas Picantes" loading="lazy"></div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Fritas Picantes</h3>
+              <p class="product-card-desc">Fritas temperadas com pimenta caiena e alho</p>
+              <p class="product-card-price">R$ 18</p>
+            </div>
+          </div>
+
+          <div class="product-card"
+            data-name="Onion Rings"
+            data-price="R$ 18"
+            data-desc="Anéis de cebola doce empanados em nossa massa artesanal com cerveja, fritos até dourar. Crocantes por fora, macios por dentro. Acompanha molho ranch."
+            data-img="https://images.unsplash.com/photo-1598679253544-2c97992403ea?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img"><img src="https://images.unsplash.com/photo-1598679253544-2c97992403ea?auto=format&fit=crop&w=600&q=80" alt="Onion Rings" loading="lazy"></div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Onion Rings</h3>
+              <p class="product-card-desc">Anéis de cebola empanados com massa artesanal crocante</p>
+              <p class="product-card-price">R$ 18</p>
+            </div>
+          </div>
+
+          <div class="product-card"
+            data-name="Coleslaw"
+            data-price="R$ 14"
+            data-desc="O contraponto refrescante. Salada de repolho roxo e verde, cenoura ralada e nosso molho cremoso com vinagre de maçã e mostarda. Leve e equilibrado."
+            data-img="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80" alt="Coleslaw" loading="lazy"></div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Coleslaw</h3>
+              <p class="product-card-desc">Salada de repolho cremosa, cenoura e tempero especial</p>
+              <p class="product-card-price">R$ 14</p>
+            </div>
+          </div>
+
+          <div class="product-card"
+            data-name="Mac & Cheese Bites"
+            data-price="R$ 22"
+            data-desc="Conforto frito. Macarrão cozido com queijo triplo cremoso, empanado e frito até dourar. Por fora crocante, por dentro derrete. Imposível comer só um."
+            data-img="https://images.unsplash.com/photo-1543353071-087092ec393a?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img"><img src="https://images.unsplash.com/photo-1543353071-087092ec393a?auto=format&fit=crop&w=600&q=80" alt="Mac & Cheese Bites" loading="lazy"></div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Mac &amp; Cheese Bites</h3>
+              <p class="product-card-desc">Bolinho frito de macarrão com queijo derretido</p>
+              <p class="product-card-price">R$ 22</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- BEBIDAS -->
+      <div class="menu-category" data-category="bebidas">
+        <h2 class="menu-category-title">
+          <span class="menu-category-icon"><i class="fa-solid fa-glass-water"></i></span>
+          Bebidas
+        </h2>
+        <div class="products-grid stagger-children">
+
+          <div class="product-card"
+            data-name="Refrigerante"
+            data-price="R$ 8"
+            data-desc="Coca-Cola, Fanta Laranja, Sprite ou Guaraná Antarctica. Lata 350ml bem gelada, do jeito que tem que ser."
+            data-img="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img"><img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=600&q=80" alt="Refrigerante" loading="lazy"></div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Refrigerante</h3>
+              <p class="product-card-desc">Coca-Cola, Fanta, Sprite — lata 350ml gelada</p>
+              <p class="product-card-price">R$ 8</p>
+            </div>
+          </div>
+
+          <div class="product-card"
+            data-name="Cerveja Artesanal"
+            data-price="R$ 16"
+            data-desc="Seleção rotativa de cervejas artesanais brasileiras. IPA, Pale Ale, Lager e opções sazonais. Sempre frescas e com rótulos especialmente curados pelo nosso sommelier."
+            data-img="https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img"><img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=600&q=80" alt="Cerveja Artesanal" loading="lazy"></div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Cerveja Artesanal</h3>
+              <p class="product-card-desc">Seleção de cervejas IPA, Pale Ale e Lager artesanais</p>
+              <p class="product-card-price">R$ 16</p>
+            </div>
+          </div>
+
+          <div class="product-card"
+            data-name="Milkshake"
+            data-price="R$ 24"
+            data-desc="Cremoso e generoso — 400ml. Baunilha de fava Madagascar, chocolate belga, morango fresco ou caramelo com flor de sal. Feito na hora com sorvete artesanal."
+            data-img="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img"><img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=80" alt="Milkshake" loading="lazy"></div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Milkshake</h3>
+              <p class="product-card-desc">Baunilha, chocolate, morango ou caramelo — 400ml</p>
+              <p class="product-card-price">R$ 24</p>
+            </div>
+          </div>
+
+          <div class="product-card"
+            data-name="Água Mineral"
+            data-price="R$ 6"
+            data-desc="Água mineral 500ml, com ou sem gás. Mantida refrigerada para sempre estar na temperatura ideal."
+            data-img="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img"><img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=600&q=80" alt="Água Mineral" loading="lazy"></div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Água Mineral</h3>
+              <p class="product-card-desc">Com ou sem gás — 500ml</p>
+              <p class="product-card-price">R$ 6</p>
+            </div>
+          </div>
+
+          <div class="product-card"
+            data-name="Limonada"
+            data-price="R$ 18"
+            data-desc="Feita na hora, 400ml. Suíça com leite condensado e raspas de limão siciliano, ou siciliana pura com bastante gelo. Refrescante e cheia de personalidade."
+            data-img="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img"><img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80" alt="Limonada" loading="lazy"></div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Limonada</h3>
+              <p class="product-card-desc">Limonada suíça ou siciliana artesanal, 400ml</p>
+              <p class="product-card-price">R$ 18</p>
+            </div>
+          </div>
+
+          <div class="product-card"
+            data-name="Café Especial"
+            data-price="R$ 12"
+            data-desc="Grão selecionado de origem única, torrado semanalmente. Espresso duplo, cappuccino cremoso ou café coado no filtro de papel. O encerramento perfeito."
+            data-img="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="Café Especial" loading="lazy"></div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Café Especial</h3>
+              <p class="product-card-desc">Espresso, cappuccino ou café coado — grão selecionado</p>
+              <p class="product-card-price">R$ 12</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SOBREMESAS -->
+      <div class="menu-category" data-category="sobremesas">
+        <h2 class="menu-category-title">
+          <span class="menu-category-icon"><i class="fa-solid fa-cake-candles"></i></span>
+          Sobremesas
+        </h2>
+        <div class="products-grid stagger-children">
+
+          <div class="product-card"
+            data-name="Cookie Derrete"
+            data-price="R$ 20"
+            data-desc="O grand finale. Cookie de chocolate com chunks generosos, saído quente do forno, servido com uma bola de sorvete de baunilha artesanal que derrete sobre ele. Coma enquanto ainda está quente."
+            data-img="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img"><img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=600&q=80" alt="Cookie Derrete" loading="lazy"></div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Cookie Derrete</h3>
+              <p class="product-card-desc">Cookie quentinho de chocolate com sorvete de baunilha</p>
+              <p class="product-card-price">R$ 20</p>
+            </div>
+          </div>
+
+          <div class="product-card"
+            data-name="Brownie"
+            data-price="R$ 18"
+            data-desc="Brownie denso de chocolate intenso 70% cacau, com calda de caramelo salgado artesanal e uma pitada de flor de sal. Intenso, rico e impossível de ignorar."
+            data-img="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img"><img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80" alt="Brownie" loading="lazy"></div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Brownie</h3>
+              <p class="product-card-desc">Brownie de chocolate intenso com calda de caramelo salgado</p>
+              <p class="product-card-price">R$ 18</p>
+            </div>
+          </div>
+
+          <div class="product-card"
+            data-name="Soft Ice"
+            data-price="R$ 12"
+            data-desc="O clássico que nunca sai de moda. Sorvete soft de baunilha cremoso servido em casquinha crocante ou copo. Simples e reconfortante."
+            data-img="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=600&q=80" alt="Soft Ice" loading="lazy"></div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Soft Ice</h3>
+              <p class="product-card-desc">Sorvete soft de baunilha na casquinha — clássico que nunca sai de moda</p>
+              <p class="product-card-price">R$ 12</p>
+            </div>
+          </div>
+
+          <div class="product-card"
+            data-name="Cheesecake"
+            data-price="R$ 22"
+            data-desc="Cheesecake de frutas vermelhas em porção individual. Base de biscoito amanteigado, creme de cream cheese aveludado e coulis de morango e framboesa. Direto da geladeira."
+            data-img="https://images.unsplash.com/photo-1508737027454-e6454ef45afd?auto=format&fit=crop&w=600&q=80">
+            <div class="product-card-img"><img src="https://images.unsplash.com/photo-1508737027454-e6454ef45afd?auto=format&fit=crop&w=600&q=80" alt="Cheesecake" loading="lazy"></div>
+            <div class="product-card-body">
+              <h3 class="product-card-name">Cheesecake</h3>
+              <p class="product-card-desc">Cheesecake de frutas vermelhas — porção individual</p>
+              <p class="product-card-price">R$ 22</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Onda: cardápio (white) → footer (dark) — côncava, entra no escuro -->
+  <div class="wave-sep wave-from-white wave-to-dark">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 90" preserveAspectRatio="none">
+      <path fill="currentColor" d="M0,50 C480,2 960,88 1440,40 L1440,90 L0,90 Z"/>
+    </svg>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <div class="footer-logo-icon">DT</div>
+          <span class="footer-logo-text">DERRETE TUDO</span>
+        </div>
+        <p class="footer-desc">O smash burger artesanal que derrete de verdade. Feito com amor, carne fresca e muito sabor desde 2019.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" class="social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Navegação</h4>
+        <div class="footer-links">
+          <a href="index.html">Início</a>
+          <a href="cardapio.html">Cardápio</a>
+          <a href="sobre.html">Sobre Nós</a>
+          <a href="contato.html">Contato</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Cardápio</h4>
+        <div class="footer-links">
+          <a href="cardapio.html">Burgers</a>
+          <a href="cardapio.html">Smash Duplo</a>
+          <a href="cardapio.html">Fritas & Sides</a>
+          <a href="cardapio.html">Bebidas</a>
+          <a href="cardapio.html">Sobremesas</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Contato</h4>
+        <div class="footer-contacts">
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+            <div class="footer-contact-text">
+              <strong>Matriz — Pinheiros</strong>
+              Rua dos Pinheiros, 850 — SP
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="fa-solid fa-phone"></i></span>
+            <div class="footer-contact-text">
+              <strong>Central de Atendimento</strong>
+              (11) 99999-0001
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; 2024 Derrete Tudo. Todos os direitos reservados.</span>
+      <div class="footer-legal">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PRODUCT MODAL -->
+  <div class="modal-overlay" id="productModal" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Fechar">&times;</button>
+      <div class="modal-img">
+        <img src="" alt="" />
+      </div>
+      <div class="modal-body">
+        <h2 class="modal-name"></h2>
+        <p class="modal-price"></p>
+        <p class="modal-desc"></p>
+        <div class="modal-actions">
+          <a href="#" class="modal-btn-wa" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i>
+            Pedir pelo WhatsApp
+          </a>
+          <button class="modal-btn-dismiss">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="https://wa.me/5511999990001" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato — Derrete Tudo Smash Burger</title>
+  <meta name="description" content="Entre em contato com o Derrete Tudo. Endereços, horários e formulário de contato." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/waves.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">DT</div>
+        <div>
+          <span class="nav-logo-text">DERRETE TUDO</span>
+          <span class="nav-logo-sub">Smash Burger</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Início</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div class="nav-cta">
+        <a href="cardapio.html" class="btn-nav-cta">Ver Cardápio</a>
+      </div>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-overlay"></div>
+  <div class="mobile-menu">
+    <div class="mobile-menu-links">
+      <a href="index.html">Início</a>
+      <a href="cardapio.html">Cardápio</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contato</a>
+    </div>
+    <a href="cardapio.html" class="mobile-menu-cta">Ver Cardápio</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Início</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Contato</span>
+      </div>
+      <h1 class="page-hero-title">CONTATO</h1>
+      <p class="page-hero-sub">Fale conosco ou encontre a unidade mais próxima</p>
+    </div>
+    <div class="page-hero-wave wave-to-white wave-sep--lg">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path fill="currentColor" d="M0,60 C160,108 320,12 480,60 C640,108 800,12 960,60 C1120,108 1280,28 1440,58 L1440,120 L0,120 Z"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Info sidebar -->
+        <div class="contact-info-list fade-up">
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <div class="contact-info-title">Telefone / WhatsApp</div>
+              <div class="contact-info-value">(11) 99999-0001</div>
+              <div class="contact-info-sub">Matriz — Pinheiros</div>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <div class="contact-info-title">E-mail</div>
+              <div class="contact-info-value">contato@derretetudo.com.br</div>
+              <div class="contact-info-sub">Respondemos em até 24h</div>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <div class="contact-info-title">Endereço Principal</div>
+              <div class="contact-info-value">Rua dos Pinheiros, 850</div>
+              <div class="contact-info-sub">Pinheiros, São Paulo — SP</div>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <div class="contact-info-title">Horário de Funcionamento</div>
+              <div class="hours-table">
+                <div class="hours-row">
+                  <span class="hours-day">Segunda – Quinta</span>
+                  <span class="hours-time">11h – 23h</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day">Sexta</span>
+                  <span class="hours-time">11h – 00h</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day">Sábado</span>
+                  <span class="hours-time">11h – 00h</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day">Domingo</span>
+                  <span class="hours-time">11h – 23h</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <div class="contact-form-card fade-up">
+          <h2 class="form-title">Fale Conosco</h2>
+          <p class="form-subtitle">Dúvidas, sugestões ou parcerias — adoramos ouvir você!</p>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" class="form-control" placeholder="Seu nome completo" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">E-mail</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="seu@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" class="form-control" placeholder="(11) 99999-9999" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="assunto">Assunto</label>
+              <select id="assunto" name="assunto" class="form-control">
+                <option value="">Selecione um assunto</option>
+                <option value="duvida">Dúvida sobre o cardápio</option>
+                <option value="reserva">Reserva de espaço</option>
+                <option value="parceria">Parceria / Fornecedor</option>
+                <option value="feedback">Feedback / Sugestão</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" class="form-control" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Enviar Mensagem</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Onda: contato (white) → unidades (beige) — arco suave -->
+  <div class="wave-sep wave-from-white wave-to-beige wave-sep--sm">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+      <path fill="currentColor" d="M0,28 C480,60 960,0 1440,28 L1440,60 L0,60 Z"/>
+    </svg>
+  </div>
+
+  <!-- UNIDADES -->
+  <section class="units-section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Onde Estamos</span>
+        <h2 class="section-title">Nossas Unidades</h2>
+        <p class="section-desc">Três endereços em São Paulo para você nos visitar.</p>
+      </div>
+      <div class="units-grid stagger-children">
+
+        <div class="unit-card">
+          <div class="unit-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3 class="unit-name">Pinheiros — Matriz</h3>
+          <p class="unit-address">Rua dos Pinheiros, 850<br>Pinheiros, São Paulo — SP, 05422-001</p>
+          <p class="unit-hours">Seg–Qui 11h–23h &nbsp;|&nbsp; Sex–Dom 11h–00h</p>
+          <div class="unit-actions">
+            <a href="https://wa.me/5511999990001" class="btn-sm btn-sm-primary" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="#" class="btn-sm btn-sm-outline">Google Maps</a>
+          </div>
+        </div>
+
+        <div class="unit-card">
+          <div class="unit-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3 class="unit-name">Vila Madalena</h3>
+          <p class="unit-address">Av. Henrique Schaumann, 220<br>Vila Madalena, São Paulo — SP</p>
+          <p class="unit-hours">Seg–Qui 11h–23h &nbsp;|&nbsp; Sex–Dom 11h–00h</p>
+          <div class="unit-actions">
+            <a href="https://wa.me/5511999990002" class="btn-sm btn-sm-primary" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="#" class="btn-sm btn-sm-outline">Google Maps</a>
+          </div>
+        </div>
+
+        <div class="unit-card">
+          <div class="unit-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3 class="unit-name">Moema</h3>
+          <p class="unit-address">Alameda dos Nhambiquaras, 1150<br>Moema, São Paulo — SP</p>
+          <p class="unit-hours">Seg–Qui 12h–23h &nbsp;|&nbsp; Sex–Dom 12h–00h</p>
+          <div class="unit-actions">
+            <a href="https://wa.me/5511999990003" class="btn-sm btn-sm-primary" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="#" class="btn-sm btn-sm-outline">Google Maps</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Onda: unidades (beige) → footer (dark) — côncava dramática -->
+  <div class="wave-sep wave-from-beige wave-to-dark wave-sep--flip">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 90" preserveAspectRatio="none">
+      <path fill="currentColor" d="M0,40 C360,88 1080,2 1440,50 L1440,90 L0,90 Z"/>
+    </svg>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <div class="footer-logo-icon">DT</div>
+          <span class="footer-logo-text">DERRETE TUDO</span>
+        </div>
+        <p class="footer-desc">O smash burger artesanal que derrete de verdade. Feito com amor, carne fresca e muito sabor desde 2019.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" class="social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Navegação</h4>
+        <div class="footer-links">
+          <a href="index.html">Início</a>
+          <a href="cardapio.html">Cardápio</a>
+          <a href="sobre.html">Sobre Nós</a>
+          <a href="contato.html">Contato</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Cardápio</h4>
+        <div class="footer-links">
+          <a href="cardapio.html">Burgers</a>
+          <a href="cardapio.html">Smash Duplo</a>
+          <a href="cardapio.html">Fritas & Sides</a>
+          <a href="cardapio.html">Bebidas</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Contato</h4>
+        <div class="footer-contacts">
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+            <div class="footer-contact-text">
+              <strong>Matriz — Pinheiros</strong>
+              Rua dos Pinheiros, 850 — SP
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="fa-solid fa-phone"></i></span>
+            <div class="footer-contact-text">
+              <strong>Central de Atendimento</strong>
+              (11) 99999-0001
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; 2024 Derrete Tudo. Todos os direitos reservados.</span>
+      <div class="footer-legal">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5511999990001" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
