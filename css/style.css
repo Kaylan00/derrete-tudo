@@ -107,12 +107,18 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .hamburger {
   display: none;
   flex-direction: column;
-  gap: 5px;
-  padding: 6px;
+  gap: 6px;
+  padding: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background .2s;
 }
+.hamburger:hover { background: rgba(0,0,0,.15); }
 .hamburger span {
   display: block;
-  width: 24px; height: 2px;
+  width: 26px; height: 3px;
   background: #fff;
   border-radius: 2px;
   transition: transform .3s, opacity .3s;
@@ -1108,7 +1114,17 @@ textarea.form-control { resize: vertical; min-height: 110px; }
 }
 @media (max-width: 768px) {
   .nav-links, .nav-cta { display: none; }
-  .hamburger { display: flex; }
+  .hamburger {
+    display: flex;
+    position: fixed;
+    top: 78px;
+    right: 16px;
+    z-index: 1001;
+    background: #C04040;
+    border-radius: 8px;
+    box-shadow: 0 3px 14px rgba(0,0,0,.35);
+    padding: 10px;
+  }
   .products-grid { grid-template-columns: repeat(2, 1fr); }
   .destaques-grid { grid-template-columns: 1fr; }
   .stats-inner { grid-template-columns: repeat(2, 1fr); }
