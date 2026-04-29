@@ -2,11 +2,17 @@
 (function () {
   'use strict';
 
-  /* ---- Navbar scroll shadow ---- */
+  /* ---- Navbar scroll shadow + scroll progress ---- */
   var navbar = document.querySelector('.navbar');
-  if (navbar) {
+  var scrollProgress = document.getElementById('scrollProgress');
+  if (navbar || scrollProgress) {
     window.addEventListener('scroll', function () {
-      navbar.classList.toggle('scrolled', window.scrollY > 20);
+      var scrollY = window.scrollY;
+      if (navbar) navbar.classList.toggle('scrolled', scrollY > 20);
+      if (scrollProgress) {
+        var total = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        scrollProgress.style.width = total > 0 ? (scrollY / total * 100) + '%' : '0%';
+      }
     }, { passive: true });
   }
 
