@@ -1992,3 +1992,4 @@ textarea.form-control { resize: vertical; min-height: 110px; }
   /* Section heading menor */
   .section-title { font-size: clamp(28px, 10vw, 44px); }
 }
+
